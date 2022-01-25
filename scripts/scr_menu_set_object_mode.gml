@@ -1,4 +1,4 @@
-///scr_menu_set_object_mode(objecr mode)
+///scr_menu_set_object_mode(object mode)
 
 var _mode = argument0;
 
