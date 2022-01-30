@@ -93,7 +93,7 @@ if (!fade_complete) {
             <string>/// Draw the fade
 draw_set_colour(c_black);
 draw_set_alpha(fade_percent/100);
-draw_rectangle(0, 0, view_wview[0], view_hview[0], false);
+//draw_rectangle(0, 0, view_wview[0], view_hview[0], false);
 draw_set_alpha(1);
 </string>
           </argument>
