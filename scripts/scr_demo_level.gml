@@ -1,4 +1,4 @@
-///scr_demo_level();
+///scr_demo_level()+;
 
 /*
     This script was written for a much early
@@ -105,5 +105,6 @@ ypos -= 32;
 instance_create(xpos,ypos,Goal);
 
 // Move the player
+
 x = irandom_range(256, 560);
 
