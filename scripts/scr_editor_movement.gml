@@ -1,14 +1,14 @@
 ///scr_editor_movement();
 
 // Movement
-repeat (4) {
-    if (input_key_right()) {
-       view_xview[0]++;
-    }
-    if (input_key_left()) {
-       view_xview[0]--;
-    }
 
+editor_view_speed = 8;
+
+if (input_key_right()) {
+   view_xview[0] += editor_view_speed * delta_diff_calc();
+}
+if (input_key_left()) {
+   view_xview[0] -= editor_view_speed * delta_diff_calc();
 }
 
 // Clamp view

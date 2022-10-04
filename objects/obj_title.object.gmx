@@ -58,20 +58,21 @@ if (input_key_any() || input_click()) {
 // Draw the title and press space
 draw_set_halign(fa_center);
 draw_set_valign(fa_center);
-draw_set_font(fnt_title);
+draw_set_font(fn_title);
 draw_set_colour(make_colour_rgb(255, 187, 4));
-draw_text(room_width / 2, room_height / 2, "Super Pixel Maker");
+draw_text(room_width / 2, room_height / 2, "PIXEL CRAFT");
+draw_set_font(fn_subtitle);
 draw_text(room_width / 2, room_height / 2 + 80, "PRESS ANYKEY!");
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 
 // Draw the developer and version information
 draw_set_valign(fa_bottom);
-draw_set_font(fnt_title_detail);
+draw_set_font(fn_main);
 draw_set_halign(fa_right);
-draw_text(room_width, room_height, "VER: " + string(GAMEVERSION));
+draw_text(room_width - 5, room_height - 5, string(GAMEVERSION));
 draw_set_halign(fa_left);
-draw_text(0, room_height, "Az Does Games");
+draw_text(5, room_height - 5, string(DEVELOPER));
 draw_set_valign(fa_top);
 </string>
           </argument>

@@ -2,7 +2,7 @@
 
 /***************************************************
   Draws a basic button which is clickable, calls a script with one argument
-  Repo: https://github.com/KnotMasterAz/useful-gml-scripts
+  Repo: https://github.com/AzFoxxo/Useful-Scripts
  ***************************************************/
 
 // Variables

@@ -25,9 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Display Properties
+            <string>/// Display Properties
 ideal_width=0;
-ideal_height=270;
+ideal_height=270*2;
 zoom=1;
 max_zooom=1;
 display_width=display_get_width();
@@ -97,7 +97,7 @@ room_goto(rm_title);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Delayed Surface resize
+            <string>/// Delayed Surface resize
 surface_resize(application_surface,ideal_width*zoom,ideal_height*zoom);
 </string>
           </argument>
@@ -121,7 +121,7 @@ surface_resize(application_surface,ideal_width*zoom,ideal_height*zoom);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Center window
+            <string>/// Center window
 window_center();
 </string>
           </argument>
@@ -150,51 +150,14 @@ if(keyboard_check_pressed(ord("Z")))
 {
   zoom++;
   
-  if(zoom&gt;max_zoom)
-    zoom=1;
+  if(zoom &gt; max_zoom)
+    zoom = 1;
   
   window_set_size(ideal_width*zoom,ideal_height*zoom);
   surface_resize(application_surface,ideal_width*zoom,ideal_height*zoom);
-  alarm[0]=1;
+  alarm[0] = 1;
 }
 
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="64">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>draw_set_font(fnt_normal);
-exit;
-draw_set_color(c_white);
-draw_set_halign(fa_left);
-draw_set_valign(fa_top);
-draw_text(5,5,display_write_specs(display.screen)+"#"+
-              display_write_specs(display.window)+"#"+
-              display_write_specs(display.app_surface)+"#"+
-              display_write_specs(display.view)+"#"+
-              display_write_specs(display.gui)
-              );
-
-draw_set_halign(fa_right);
-draw_set_valign(fa_bottom);
-draw_text(display_get_gui_width()-5,display_get_gui_height()-5,"FPS: " + string(fps));
 </string>
           </argument>
         </arguments>

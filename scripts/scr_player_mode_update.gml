@@ -5,7 +5,7 @@ time -= (1 / room_speed);
 
 // Is time up
 if (time <= 0) {
-    room_goto(rm_editor);
+    room_goto_previous();
 }
 
 // Auto scrolling

@@ -98,12 +98,12 @@ if (menu == 0) {
     // Save option
     options[0, 0] = scr_menu_set_option;
     options[0, 1] = "play";
-    options[0, 2] = "Play";
+    options[0, 2] = "Play Level";
     
     // Quit option
     options[1, 0] = scr_menu_set_option;
     options[1, 1] = "quit";
-    options[1, 2] = "Quit";
+    options[1, 2] = "Level Select";
     
     // Music option
     options[2, 0] = scr_menu_set_option;

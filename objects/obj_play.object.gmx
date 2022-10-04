@@ -108,22 +108,25 @@ if (obj_player.life &gt; -1) {
     var _p = 8;
     var _xw = view_wview[0];
     
+    // Edit button
+    button_basic_clickable(0, 0, 32, 32, c_black, c_black, c_white, spr_edit, menu_action_enter_edit_mode, 0, 1);
+    
     /// Health bar
     for (i = 0; i &lt; obj_player.life_max; i++)
     {
         if (i &lt; obj_player.life) {
-            draw_sprite(spr_life, 0, 32 * i, 0);
+            draw_sprite(spr_life, 0, _xw - (32 * i + sprite_get_width(spr_life)), 0);
         } else {
-            draw_sprite(spr_life, 1, 32 * i, 0);
+            draw_sprite(spr_life, 1, _xw - (32 * i + sprite_get_width(spr_life)), 0);
         }
     };
     
     
     /// Time bar
-    draw_set_halign(fa_right);
-    draw_set_colour(c_white)
-    draw_set_font(fnt_title_detail)
-    draw_text(_xw - _p, _y + 2, round(time));
+    draw_set_halign(fa_center);
+    draw_set_colour(c_white);
+    draw_set_font(fn_main);
+    draw_text(_xw / 2, _y + 2, round(time));
     draw_set_halign(fa_left);
 } else if (obj_room_fade.fade_percent &gt; 50) {
     room_goto(rm_editor);
@@ -131,12 +134,11 @@ if (obj_player.life &gt; -1) {
     // Game Over
     draw_set_halign(fa_center);
     draw_set_valign(fa_center);
-    draw_set_font(fnt_title);
+    draw_set_font(fn_title);
     draw_set_colour(c_white);
     draw_text(view_wview[0] / 2, view_hview[0] / 2, "GAME OVER");
-    draw_set_font(fnt_title_detail);
+    draw_set_font(fn_main);
     draw_text(view_wview[0] / 2 , view_hview[0] / 2 + 50, "PRESS ANYKEY OR CLICK TO EDIT LEVEL!#Auto restart in two seconds!");
-    draw_set_font(fnt_normal);
     draw_set_halign(fa_left);
     draw_set_valign(fa_top);
     alarm[0] = 60;

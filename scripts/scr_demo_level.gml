@@ -1,4 +1,4 @@
-///scr_demo_level()+;
+///scr_demo_level();
 
 /*
     This script was written for a much early

@@ -2,7 +2,7 @@
 <room>
   <caption></caption>
   <width>10000</width>
-  <height>270</height>
+  <height>540</height>
   <vsnap>32</vsnap>
   <hsnap>32</hsnap>
   <isometric>0</isometric>
@@ -56,9 +56,8 @@ obj_audio.audio_music_to_play = sound1_Juhani_Junkala__Retro_Game_Music_Pack__Le
   </views>
   <instances>
     <instance objName="obj_editor" x="0" y="0" name="inst_1B838A75" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_delete" x="32" y="224" name="inst_6C172CD0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_menu" x="32" y="0" name="inst_5421F6D6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_delete" x="0" y="0" name="inst_B09EE87A" locked="0" code="" scaleX="25" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_delete" x="0" y="0" name="inst_B09EE87A" locked="0" code="" scaleX="42" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

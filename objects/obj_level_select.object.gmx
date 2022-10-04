@@ -65,11 +65,11 @@ scr_file_init();
 var _width = view_wview[0] / 2.5;
 var _inc = 25;
 var _hstart = 10;
-for (i = 0; i &lt; 10; i++)
+for (i = 0; i &lt; 20; i++)
 {
     var _str = "Level " + string(i+1);
     button_basic_clickable(5 / 2, _hstart + (_inc * i), _width, 20, c_black, c_black, c_white, _str, scr_menu_set_level, i+1, 1);
-    button_basic_clickable(5 / 2 + (view_wview[0] / 2), _hstart + (_inc * i), _width, 20, c_black, c_black, c_white, "Level~" + string(i+1+10), scr_menu_set_level, i+1+10, 1);
+    button_basic_clickable(5 / 2 + (view_wview[0] / 2), _hstart + (_inc * i), _width, 20, c_black, c_black, c_white, "Level " + string(i+1+10), scr_menu_set_level, i+1+10, 1);
 };
 </string>
           </argument>
