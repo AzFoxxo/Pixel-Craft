@@ -25,10 +25,10 @@ else if (place_meeting(x,y - 1,obj_asset_ground) && place_meeting(x,y + 1,obj_as
 // Buttom row
 else {
    if (!place_meeting(x - 1,y,obj_asset_ground)) {
-      image_index = 6;
+      image_index = 8;
    } else if (place_meeting(x + 1,y,obj_asset_ground) && place_meeting(x - 1,y,obj_asset_ground)) {
-      image_index = 7;
+      image_index = 6;
    } else {
-        image_index = 8;
+        image_index = 7;
    }
 }
