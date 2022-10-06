@@ -80,6 +80,13 @@ if (menu == 0) {
     
     button_basic_clickable(view_wview[0] - 96, 0, 32, 32, c_black, c_black, _ui_subimage, spr_ui_edit, scr_menu_set_object_mode, 1, 1);
     
+    _ui_subimage = 0;
+    if (obj_editor.mode == object_modes._grid_) {
+        _ui_subimage = 1;
+    }
+    
+    button_basic_clickable(view_wview[0] - 128, 0, 32, 32, c_black, c_black, _ui_subimage, spr_ui_edit_grid, menu_action_menu_set_object_mode_grid, 1, 1);
+    
     if (menu == 1) {
         obj_audio.audio_music_to_play = obj_editor.level_music;
     }

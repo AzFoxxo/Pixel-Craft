@@ -4,7 +4,8 @@
 enum object_modes {
     _place_,
     _erase_,
-    _empty_
+    _empty_,
+    _grid_
 }
 
 // Variables
@@ -27,3 +28,6 @@ scr_file_load();
 
 // Quick fix for enemy not showing origin in correct place
 sprite_set_offset(spr_enemy, 0, 0);
+
+// Initialise lsf
+//lsf_initialisation(10, 10);

@@ -50,6 +50,8 @@
     <sprite>sprites\spr_ui_edit</sprite>
     <sprite>sprites\spr_flip</sprite>
     <sprite>sprites\spr_edit</sprite>
+    <sprite>sprites\spr_ui_edit_grid</sprite>
+    <sprite>sprites\spr_edit_grid_selection</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_grid</background>
@@ -75,6 +77,7 @@
         <script>scripts\scr_menu_set_option.gml</script>
         <script>scripts\scr_menu_set_room.gml</script>
         <script>scripts\scr_menu_set_object_mode.gml</script>
+        <script>scripts\menu_action_menu_set_object_mode_grid.gml</script>
         <script>scripts\menu_action_enter_edit_mode.gml</script>
       </scripts>
     </scripts>
@@ -105,6 +108,10 @@
       <script>scripts\delta_diff_calc.gml</script>
     </scripts>
     <script>scripts\scr_demo_level.gml</script>
+    <scripts name="Level Storage Format">
+      <script>scripts\lsf_initialisation.gml</script>
+    </scripts>
+    <script>scripts\instance_create_safety_number_checked.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fn_title</font>
@@ -127,15 +134,16 @@
     <object>objects\obj_audio</object>
     <object>objects\obj_delete</object>
     <object>objects\obj_display_manager</object>
+    <object>objects\obj_edit_grid_selection</object>
     <object>objects\obj_editor</object>
-    <object>objects\obj_menu</object>
+    <object>objects\obj_game_delta</object>
     <object>objects\obj_level_select</object>
+    <object>objects\obj_menu</object>
     <object>objects\obj_play</object>
     <object>objects\obj_player</object>
-    <object>objects\obj_title</object>
     <object>objects\obj_room_fade</object>
+    <object>objects\obj_title</object>
     <object>objects\rm_debug</object>
-    <object>objects\obj_game_delta</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\_display_init</room>
@@ -145,10 +153,11 @@
     <room>rooms\rm_play</room>
     <room>rooms\rm_test</room>
   </rooms>
-  <constants number="3">
+  <constants number="4">
     <constant name="DEVELOPER">"@GameDevFox"</constant>
     <constant name="GAMEVERSION">"Final Release"</constant>
-    <constant name="FILEVERSION">69</constant>
+    <constant name="FILEVERSION">69.2</constant>
+    <constant name="CELLSIZE">32</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>

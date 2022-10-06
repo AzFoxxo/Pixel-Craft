@@ -10,10 +10,7 @@
   <persistent>0</persistent>
   <colour>4194304</colour>
   <showcolour>-1</showcolour>
-  <code>/// Room size
-room_width = 10000;
-
-// Audio
+  <code>// Audio
 obj_audio.audio_music_to_play = sound1_Juhani_Junkala__Retro_Game_Music_Pack__Level_1;</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
